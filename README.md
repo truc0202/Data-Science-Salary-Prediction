@@ -13,7 +13,10 @@
 * [Giới thiệu môn học](#giới-thiệu-môn-học)
 * [Thông tin các thành viên](#thông-tin-về-các-thành-viên-nhóm)
 * [Giới thiệu dự án](#giới-thiệu-dự-án)
-* 
+* [Mô tả bộ dữ liệu](#mô-tả-bộ-dữ-liệu)
+* [Phương pháp phân tích](#phương-pháp-phân-tích)
+* [Kết quả phân tích](#kết-quả-phân-tích)
+* [Kết quả mô hình](#kết-quả-mô-hình)
 
 ## [GIỚI THIỆU MÔN HỌC](#top)
 * **Tên môn học:** Phân tích Dữ liệu - Data Analysis
