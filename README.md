@@ -7,7 +7,7 @@
   </a>
 </p>
 
-<h1 align="center"><b>PHÂN TÍCH DỮ LIỆU<br></b></h>
+<h1 align="center"><b>DATA SCIENCE SALARY PREDICTION<br></b></h>
 
 ## [BẢNG MỤC LỤC](#top)
 * [Giới thiệu môn học](#giới-thiệu-môn-học)
