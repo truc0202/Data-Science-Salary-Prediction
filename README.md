@@ -10,8 +10,10 @@
 <h1 align="center"><b>PHÂN TÍCH DỮ LIỆU<br></b></h>
 
 ## [BẢNG MỤC LỤC](#top)
-* [GIỚI THIỆU MÔN HỌC]()
+* [Giới thiệu môn học](#giới-thiệu-môn-học)
 * [Thông tin các thành viên](#thông-tin-về-các-thành-viên-nhóm)
+* [Giới thiệu dự án](#giới-thiệu-dự-án)
+* 
 
 ## [GIỚI THIỆU MÔN HỌC](#top)
 * **Tên môn học:** Phân tích Dữ liệu - Data Analysis
@@ -53,7 +55,24 @@
   + XGBoost
   + Linear Regression (thư viện scikit-learn)
 ## [MÔ TẢ BỘ DỮ LIỆU](#top)
+Dưới đây là tóm tắt thông tin về các thuộc tính trong bảng dữ liệu công việc:
 
+| Tên thuộc tính      | Kiểu dữ liệu   | Mô tả                                                                        | Khoảng giá trị                           |
+|---------------------|----------------|------------------------------------------------------------------------------|------------------------------------------|
+| Job Title           | object (string)| Tên công việc                                                                | “Data Scientist”, “Healthcare Data Scientist”, ... |
+| Salary Estimate     | object (string)| Khoảng lương, đi kèm là ghi chú về cách tính lương hoặc thông tin này do ai cung cấp | “$53K-$91K (Glassdoor est.)”, “$21-$34 Per Hour (Glassdoor est.)”, ... |
+| Job Description     | object (string)| Mô tả công việc, có chứa các kỹ năng yêu cầu (chuỗi rất dài)                 | “KnowBe4, Inc. is a high growth information sec...”, ... |
+| Rating              | float64        | Điểm số đánh giá về công ty                                                  | [-1.0, 5.0]                              |
+| Company Name        | object (string)| Tên công ty, kèm với điểm đánh giá                                           | “KnowBe4\n4.8”, “PNNL\n3.8”, ...          |
+| Location            | object (string)| Địa điểm làm việc                                                            | “Linthicum, MD”, “Clearwater, FL”, ...    |
+| Headquarters        | object (string)| Địa điểm trụ sở chính                                                        | “Baltimore, MD”, “Clearwater, FL”, ...    |
+| Size                | object (string)| Quy mô công ty                                                               | “1 to 50 employees”, “51 to 200 employees”, ... |
+| Founded             | int64          | Năm thành lập                                                                | [-1, 2019]                               |
+| Type of ownership   | object (string)| Loại hình sở hữu công ty                                                     | “Company - Private”, “Government”, ...    |
+| Industry            | object (string)| Ngành công nghiệp                                                            | “Energy”, “Security Services”, ...        |
+| Sector              | object (string)| Lĩnh vực                                                                     | “Health Care”, “Business Services”, ...   |
+| Revenue             | object (string)| Doanh thu công ty                                                            | “$2 to $5 billion (USD)”, “$50 to $100 million (USD)”, ... |
+| Competitors         | object (string)| Tên các công ty đối thủ                                                      | -1 hoặc “Novartis, Baxter, Pfizer”, “Travelers, Allstate, State Farm”, ... |
 
 
 ## [PHƯƠNG PHÁP PHÂN TÍCH](#top)
@@ -105,5 +124,50 @@ Lưu dữ liệu đã làm sạch:
 - Trực quan hóa kết quả.
 ## [KẾT QUẢ PHÂN TÍCH](#top)
 
+### Thăm dò bằng PowerBI
 ![image](https://github.com/user-attachments/assets/7bfd8126-53d5-48f4-91d5-30a63730a578)
 
+### Thông tin về công việc
+<img width="400" alt="overall_distribution" src=https://github.com/user-attachments/assets/8a722aa4-91d8-48f8-830a-46a796d4cb1b>
+
+### Kỹ năng cần thiết
+<img width="500" alt="overall_distribution" src=https://github.com/user-attachments/assets/819f6551-c923-4ca4-9a60-ca3663773995>
+<img width="400" alt="overall_distribution" src=https://github.com/user-attachments/assets/5d6d06bd-3f44-4d63-ac3a-1c2b513a90bf>
+
+### Thông tin về công ty
+<img width="500" alt="overall_distribution" src=https://github.com/user-attachments/assets/5bac85bd-63c4-4982-821d-1fbb63accfec>
+
+### Thông tin về mức lương trên thị trường
+
+- Ảnh hưởng của kinh nghiệm làm việc
+<img width="500" alt="overall_distribution" src=https://github.com/user-attachments/assets/80b83ebe-5d0e-4ff0-a104-92200c6c3eca>
+
+- Ảnh hưởng của vị trí địa lý
+<img width="500" alt="overall_distribution" src=https://github.com/user-attachments/assets/a3d841ad-9ecc-45ce-b7b5-7fa1fee4dac2>
+
+![image](https://github.com/user-attachments/assets/78b68e93-0da0-416f-91c8-034a1e11cc00)
+
+➡️**Insight:**
+- **Thông tin về công việc:** Thị trường việc làm khoa học dữ liệu đa dạng, chủ yếu tuyển dụng nhân lực có kinh nghiệm với các vị trí Senior/Principal chiếm đa số.
+
+- **Kỹ năng cần thiết:** Python và SQL là hai kỹ năng quan trọng nhất. AWS và Spark được yêu cầu nhiều hơn cho các vị trí kỹ thuật.
+
+- **Thông tin về công ty:** Trang tuyển dụng tiếp cận hơn 400 công ty, chủ yếu là công ty tư nhân với quy mô từ trung bình đến lớn. Các công ty này có mức uy tín và chất lượng cao.
+
+- **Thông tin về địa điểm và khu vực:** Công việc tập trung tại các bang như California, Massachusetts, và New York. Các thành phố lớn mang lại nhiều cơ hội nhưng cũng đi kèm thách thức về chi phí sinh hoạt cao.
+
+- **Mức lương trên thị trường:** Mức lương trung bình dao động từ $74,700 đến $128,200, với Data Scientist có mức lương cao nhất. Kinh nghiệm làm việc ảnh hưởng đáng kể đến mức lương, với Entry-level nhận lương thấp hơn so với Senior hoặc Manager/Director.
+## [KẾT QUẢ MÔ HÌNH](#top)
+
+
+| **STT** | **Mô hình**                    | **MSE**        | **MAE**        | **R2**         |
+|---------|--------------------------------|----------------|----------------|----------------|
+| 0       | XGBoost                        | 2.687e+08      | 1.065e+04      | 8.286e-01      |
+| 1       | RandomForest                   | 2.936e+08      | 1.127e+04      | 8.127e-01      |
+| 2       | HistogramGradientBoosting      | 4.009e+08      | 1.456e+04      | 7.443e-01      |
+| 3       | DecisionTree                   | 4.605e+08      | 1.024e+04      | 7.062e-01      |
+| 4       | KNeighbors                     | 8.300e+08      | 2.173e+04      | 4.706e-01      |
+| 5       | SVR                            | 1.616e+09      | 3.117e+04      | -3.078e-02     |
+| 6       | LinearRegression               | 2.511e+33      | 1.946e+16      | -1.602e+24     |
+
+![image](https://github.com/user-attachments/assets/556a15f7-6d36-4d84-bf5e-8422a76d602c)
